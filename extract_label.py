@@ -53,17 +53,18 @@ def parse_sas_html(file_path):
 
     return sas_variables, value_labels
 
-# Example usage
-file_path = "Original Data/USCODE23_LLCP_091024.HTML"  # Update this with the correct file path
-sas_variables, value_labels = parse_sas_html(file_path)
+if __name__ == "__main__":
+    # Example usage
+    file_path = "Original Data/USCODE23_LLCP_091024.HTML"  # Update this with the correct file path
+    sas_variables, value_labels = parse_sas_html(file_path)
 
-# Print results
-print("SAS Variables and Labels:")
-for var, label in sas_variables.items():
-    print(f"{var}: {label}")
+    # Print results
+    print("SAS Variables and Labels:")
+    for var, label in sas_variables.items():
+        print(f"{var}: {label}")
 
-print("\nValue Labels:")
-for var, values in value_labels.items():
-    print(f"\n{var}:")
-    for val, val_label in values.items():
-        print(f"  {val}: {val_label}")
+    print("\nValue Labels:")
+    for var, values in value_labels.items():
+        print(f"\n{var}:")
+        for val, val_label in values.items():
+            print(f"  {val}: {val_label}")

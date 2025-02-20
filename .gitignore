@@ -16,3 +16,4 @@ venv/
 # Ignore dataset and large files
 Original Data/
 *.csv
+*.html
