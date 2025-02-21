@@ -24,7 +24,7 @@ Project
 
 ## File Descriptions
 
-### **Original Data/** (Not Published on GitHub)
+### **Original Data/** (Not Published on GitHub) https://drive.google.com/file/d/13Bj0if92el3IzpwI5s6bjrJvdg-akHoL/view?usp=drive_link
 - **`LLCP2023.XPT`**: The original heart disease dataset in SAS Transport (XPT) format.  
 - **`USCODE23_LLCP_091024.HTML`**: Contains encoded feature names and values from the dataset.
 
@@ -45,7 +45,7 @@ Run the following command to convert the original XPT file into a CSV format:
 python convert_csv.py
 ```
 
-### **2. Perform Exploratory Data Analysis (EDA)
+### **2. Perform Exploratory Data Analysis (EDA)**
 To analyze and preprocess the dataset, follow these steps:
 
 1. Open Jupyter Notebook:
@@ -68,5 +68,9 @@ To analyze and preprocess the dataset, follow these steps:
 Ensure you have the necessary Python libraries installed before running the scripts.  
 Install dependencies using:
 ```sh
-pip install pandas numpy matplotlib seaborn scikit-learn jupyter
+pip install pandas numpy matplotlib seaborn scikit-learn jupyter bs4 pyreadstat
+```
+Or
+```sh
+pip install -r requirements.txt
 ```

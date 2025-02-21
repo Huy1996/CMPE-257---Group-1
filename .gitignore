@@ -8,8 +8,8 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Ignore environment and dependency files
-env/
-venv/
+.env/
+.venv/
 *.venv
 *.egg-info/
 

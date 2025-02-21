@@ -1,4 +1,12 @@
 import pyreadstat
 
-df, meta = pyreadstat.read_xport("Original Data/LLCP2023.XPT", encoding="latin1")
-df.to_csv("data.csv", index=False)
+file = "Original Data/LLCP2023.XPT"
+csv = "data.csv"
+print("Reading data ...")
+df, meta = pyreadstat.read_xport(file, encoding="latin1")
+
+print("Converting to CSV file ...")
+df.to_csv(csv, index=False)
+
+print("Converted successful.")
+print(f"Output file: {csv}")
