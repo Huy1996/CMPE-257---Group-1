@@ -15,5 +15,6 @@ __pycache__/
 
 # Ignore dataset and large files
 Original Data/
+Modified Data/
 *.csv
 *.html
