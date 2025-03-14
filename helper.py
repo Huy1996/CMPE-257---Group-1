@@ -30,3 +30,5 @@ def load_model(file_name):
     model = joblib.load(file_name)
     print(f"Model loaded from {file_name}")
     return model
+
+
